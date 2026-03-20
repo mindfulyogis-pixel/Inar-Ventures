@@ -1,8 +1,9 @@
 "use client";
 
+import { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 
-export default function Teachers() {
+function TeachersContent() {
   const searchParams = useSearchParams();
   const success = searchParams.get("success");
 
@@ -118,7 +119,9 @@ export default function Teachers() {
         </div>
 
         <div>
-          <label className="block text-sm mb-2">What styles do you teach?</label>
+          <label className="block text-sm mb-2">
+            What styles do you teach?
+          </label>
           <input
             type="text"
             name="styles"
@@ -159,5 +162,13 @@ export default function Teachers() {
         </button>
       </form>
     </main>
+  );
+}
+
+export default function Teachers() {
+  return (
+    <Suspense fallback={<div className="p-10 text-center">Loading...</div>}>
+      <TeachersContent />
+    </Suspense>
   );
 }
