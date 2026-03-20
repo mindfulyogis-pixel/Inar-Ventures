@@ -1,11 +1,12 @@
-"use client";
+type TeachersPageProps = {
+  searchParams: Promise<{ success?: string }>;
+};
 
-import { Suspense } from "react";
-import { useSearchParams } from "next/navigation";
-
-function TeachersContent() {
-  const searchParams = useSearchParams();
-  const success = searchParams.get("success");
+export default async function TeachersPage({
+  searchParams,
+}: TeachersPageProps) {
+  const params = await searchParams;
+  const success = params.success;
 
   return (
     <main className="px-6 py-20 max-w-3xl mx-auto">
@@ -32,7 +33,7 @@ function TeachersContent() {
         <input
           type="hidden"
           name="_next"
-          value="http://localhost:3000/teachers?success=true"
+          value="http://inar-ventures-uyzo.vercel.app/teachers?success=true"
         />
 
         <div>
@@ -119,9 +120,7 @@ function TeachersContent() {
         </div>
 
         <div>
-          <label className="block text-sm mb-2">
-            What styles do you teach?
-          </label>
+          <label className="block text-sm mb-2">What styles do you teach?</label>
           <input
             type="text"
             name="styles"
@@ -162,13 +161,5 @@ function TeachersContent() {
         </button>
       </form>
     </main>
-  );
-}
-
-export default function Teachers() {
-  return (
-    <Suspense fallback={<div className="p-10 text-center">Loading...</div>}>
-      <TeachersContent />
-    </Suspense>
   );
 }
