@@ -24,8 +24,11 @@ export default function RootLayout({
               <nav className="nav-links">
                 <a href="/">Home</a>
                 <a href="/about">About</a>
-                <a href="/yoga-professionals">Yoga Professionals</a>
+                <a href="/teachers">Our Network</a>
                 <a href="/contact">Contact</a>
+                <a href="/yoga-professionals" className="nav-cta">
+                  Apply to Join
+                </a>
               </nav>
             </div>
           </header>
@@ -36,37 +39,36 @@ export default function RootLayout({
             <div className="container footer-grid">
               <div className="footer-col footer-intro">
                 <div className="footer-brand">Inar Ventures</div>
-                <p className="footer-text">
-                  Qualified Indian yoga professionals for online work with
-                  clients offering yoga classes and programmes online.
+                <p className="footer-text" style={{ maxWidth: "30ch" }}>
+                  Connecting qualified Indian yoga professionals with clients
+                  and organisations worldwide.
                 </p>
               </div>
 
               <div className="footer-col">
                 <div className="footer-heading">Contact</div>
                 <p className="footer-text">Bangalore, India</p>
-                <p className="footer-text">hello@inarventures.com</p>
+                <p className="footer-text" style={{ marginTop: "0.4rem" }}>
+                  hello@inarventures.com
+                </p>
               </div>
 
               <div className="footer-col">
-                <div className="footer-heading">Links</div>
+                <div className="footer-heading">Navigate</div>
                 <div className="footer-links">
                   <a href="/">Home</a>
                   <a href="/about">About</a>
-                  <a href="/yoga-professionals">Yoga Professionals</a>
+                  <a href="/teachers">Our Network</a>
+                  <a href="/yoga-professionals">Apply to Join</a>
                   <a href="/contact">Contact</a>
                 </div>
               </div>
 
               <div className="footer-col">
-                <div className="footer-heading">Social</div>
+                <div className="footer-heading">Follow</div>
                 <div className="footer-links">
-                  <a href="#" aria-label="LinkedIn">
-                    LinkedIn
-                  </a>
-                  <a href="#" aria-label="Instagram">
-                    Instagram
-                  </a>
+                  <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                  <a href="#" aria-label="Instagram">Instagram</a>
                 </div>
               </div>
             </div>
