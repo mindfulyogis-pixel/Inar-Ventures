@@ -3,7 +3,7 @@ export default function About() {
     <main style={{ background: "#fafaf8", color: "#18181b" }}>
 
       {/* ── Hero ── */}
-      <section className="px-5 py-16 md:py-24" style={{ background: "#fff" }}>
+      <section className="px-5 py-14 md:py-20" style={{ background: "#fff", borderBottom: "1px solid #e4e4e7" }}>
         <div className="max-w-3xl mx-auto">
           <p
             className="text-xs font-medium mb-3 uppercase tracking-widest"
@@ -15,18 +15,13 @@ export default function About() {
             className="text-3xl md:text-5xl font-semibold leading-tight mb-5"
             style={{ letterSpacing: "-0.01em" }}
           >
-            Connecting India's yoga professionals with the world
+            We believe India has some of the world's finest yoga talent — and the world should have access to it.
           </h1>
-          <p className="text-base md:text-lg leading-8" style={{ color: "#52525b", maxWidth: "55ch" }}>
-            Inar Ventures is a curated network that brings qualified Indian yoga
-            instructors and therapists together with clients and organisations
-            offering online programmes worldwide.
-          </p>
         </div>
       </section>
 
-      {/* ── Mission ── */}
-      <section className="px-5 py-14 md:py-20" style={{ background: "#fafaf8", borderTop: "1px solid #e4e4e7" }}>
+      {/* ── Mission + Story ── */}
+      <section className="px-5 py-14 md:py-20" style={{ background: "#fafaf8", borderBottom: "1px solid #e4e4e7" }}>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-16">
           <div>
             <p
@@ -36,18 +31,18 @@ export default function About() {
               Our mission
             </p>
             <h2 className="text-2xl md:text-3xl font-semibold mb-5 leading-snug">
-              Professional yoga, made accessible across borders
+              Creating real opportunities on both sides
             </h2>
-            <p className="text-sm md:text-base leading-8 mb-4" style={{ color: "#52525b" }}>
-              Our mission is to make it straightforward for organisations and
-              individuals outside India to access qualified, vetted Indian yoga
-              professionals for online classes, programmes, and therapeutic work.
+            <p className="text-sm md:text-base mb-4" style={{ color: "#52525b", lineHeight: "1.8" }}>
+              Inar Ventures exists to create meaningful online work opportunities
+              for qualified yoga instructors and therapists based in India, while
+              giving clients and organisations worldwide access to a curated,
+              reliable network of professionals.
             </p>
-            <p className="text-sm md:text-base leading-8" style={{ color: "#52525b" }}>
-              We believe that India's depth of yoga knowledge deserves a global
-              audience — and that international clients deserve a professional,
-              reliable experience when they seek it out. We provide the
-              infrastructure and curation to make both possible.
+            <p className="text-sm md:text-base" style={{ color: "#52525b", lineHeight: "1.8" }}>
+              We operate as a consultancy network — professionals retain full
+              independence, and clients get access to expertise that would
+              otherwise be difficult to find and vet.
             </p>
           </div>
 
@@ -56,29 +51,27 @@ export default function About() {
               className="text-xs font-medium mb-3 uppercase tracking-widest"
               style={{ color: "#71717a" }}
             >
-              Our story
+              How we started
             </p>
             <h2 className="text-2xl md:text-3xl font-semibold mb-5 leading-snug">
-              Founded to bridge a real gap
+              Founded to solve a real problem
             </h2>
-            <p className="text-sm md:text-base leading-8 mb-4" style={{ color: "#52525b" }}>
-              Inar Ventures was founded from a straightforward observation:
-              India has an extraordinary breadth of qualified, experienced yoga
-              teachers and therapists. Meanwhile, organisations outside India —
-              wellness platforms, corporate wellbeing teams, online studios, and
-              private clients — often struggle to find reliable professionals for
-              their online programmes.
+            <p className="text-sm md:text-base mb-4" style={{ color: "#52525b", lineHeight: "1.8" }}>
+              Inar Ventures was founded on a simple observation: the demand for
+              authentic, qualified yoga instruction online is growing globally,
+              but finding the right professional — one who is genuinely trained,
+              experienced in online delivery, and dependable — remains difficult.
             </p>
-            <p className="text-sm md:text-base leading-8" style={{ color: "#52525b" }}>
-              We exist to bridge that gap — carefully, selectively, and with
-              quality at the centre of everything we do.
+            <p className="text-sm md:text-base" style={{ color: "#52525b", lineHeight: "1.8" }}>
+              We set out to solve that — by building a network where quality is
+              the entry requirement, not an afterthought.
             </p>
           </div>
         </div>
       </section>
 
       {/* ── Who we serve ── */}
-      <section className="px-5 py-14 md:py-20" style={{ background: "#f0e9de", borderTop: "1px solid rgba(0,0,0,0.06)" }}>
+      <section className="px-5 py-14 md:py-20" style={{ background: "#f0e9de", borderBottom: "1px solid rgba(0,0,0,0.06)" }}>
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
             <p
@@ -88,7 +81,7 @@ export default function About() {
               Who we serve
             </p>
             <h2 className="text-2xl md:text-3xl font-semibold leading-snug">
-              Two audiences, one carefully curated network
+              Two audiences, one curated network
             </h2>
           </div>
 
@@ -97,69 +90,67 @@ export default function About() {
               className="rounded-2xl p-7 md:p-8"
               style={{ background: "#fff", border: "1px solid rgba(0,0,0,0.07)" }}
             >
+              <p
+                className="text-xs font-semibold uppercase tracking-widest mb-3"
+                style={{ color: "#3f6145" }}
+              >
+                For clients
+              </p>
               <h3 className="text-lg md:text-xl font-semibold mb-3">
-                Clients &amp; organisations
+                Organisations and programmes worldwide
               </h3>
-              <p className="text-sm md:text-base leading-8 mb-4" style={{ color: "#52525b" }}>
-                We work with online yoga studios, corporate wellness and
-                wellbeing teams, health and fitness platforms, and individual
-                clients based outside India — anyone who needs qualified yoga
-                professionals for regular classes, structured programmes, or
-                therapeutic sessions.
+              <p className="text-sm md:text-base mb-5" style={{ color: "#52525b", lineHeight: "1.8" }}>
+                Wellness platforms, corporate wellbeing programmes, online yoga
+                studios, and health organisations looking for qualified yoga
+                professionals for online delivery. We handle the curation,
+                verification, and coordination — you focus on your programme.
               </p>
-              <p className="text-sm leading-7" style={{ color: "#71717a" }}>
-                We handle the curation, verification, and coordination — you
-                focus on your programme.
-              </p>
-              <div className="mt-6">
-                <a
-                  href="/contact"
-                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium"
-                  style={{ background: "#3f6145", color: "#fff" }}
-                >
-                  Partner with Us →
-                </a>
-              </div>
+              <a
+                href="/contact"
+                className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium"
+                style={{ background: "#3f6145", color: "#fff" }}
+              >
+                Partner with Us →
+              </a>
             </div>
 
             <div
               className="rounded-2xl p-7 md:p-8"
               style={{ background: "#fff", border: "1px solid rgba(0,0,0,0.07)" }}
             >
+              <p
+                className="text-xs font-semibold uppercase tracking-widest mb-3"
+                style={{ color: "#3f6145" }}
+              >
+                For professionals
+              </p>
               <h3 className="text-lg md:text-xl font-semibold mb-3">
-                Yoga professionals in India
+                Yoga instructors and therapists in India
               </h3>
-              <p className="text-sm md:text-base leading-8 mb-4" style={{ color: "#52525b" }}>
-                We work with certified yoga instructors and yoga therapists
-                based in India who have the training, experience, and online
-                capability to serve international clients. We look for
-                professionals who take their work seriously and bring both
-                knowledge and reliability to every session.
+              <p className="text-sm md:text-base mb-5" style={{ color: "#52525b", lineHeight: "1.8" }}>
+                Yoga instructors and yoga therapists based in India who are
+                qualified, experienced, and looking to expand their practice to
+                international clients online. Joining the network is a
+                consultancy arrangement — you stay fully independent.
               </p>
-              <p className="text-sm leading-7" style={{ color: "#71717a" }}>
-                Joining the network requires a review process — we are
-                selective, not a directory.
-              </p>
-              <div className="mt-6">
-                <a
-                  href="/yoga-professionals"
-                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium"
-                  style={{
-                    border: "1px solid #3f6145",
-                    color: "#3f6145",
-                    background: "transparent",
-                  }}
-                >
-                  Apply to Join →
-                </a>
-              </div>
+              <a
+                href="/yoga-professionals"
+                className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium"
+                style={{
+                  border: "1px solid #3f6145",
+                  color: "#3f6145",
+                  background: "transparent",
+                }}
+              >
+                Apply to Join →
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* ── Values ── */}
-      <section className="px-5 py-14 md:py-20" style={{ background: "#fafaf8", borderTop: "1px solid #e4e4e7" }}>
+      <section className="px-5 py-14 md:py-20" style={{ background: "#fafaf8" }}>
         <div className="max-w-6xl mx-auto">
           <div className="mb-10">
             <p
@@ -171,40 +162,32 @@ export default function About() {
             <h2 className="text-2xl md:text-3xl font-semibold">Our values</h2>
           </div>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5">
             {[
               {
-                title: "Quality over volume",
-                body: "We are selective about who joins our network. Every professional is reviewed for their qualifications, teaching experience, and online delivery ability — not simply accepted.",
+                title: "Quality",
+                body: "We are selective about who joins the network. Every professional is reviewed for qualifications, teaching experience, and online delivery — not simply listed.",
+              },
+              {
+                title: "Integrity",
+                body: "We are straightforward about what we do and how we operate — with both the professionals in our network and the clients we work with.",
+              },
+              {
+                title: "Independence",
+                body: "Professionals in our network are independent consultants, free to work with their own clients. We connect, not control.",
               },
               {
                 title: "Professionalism",
-                body: "We manage coordination, communication, and follow-through so that both clients and professionals have a smooth, reliable experience at every stage.",
-              },
-              {
-                title: "Transparency",
-                body: "We are clear about what we do, who we work with, and how the process works. No ambiguity about what clients are getting or what professionals can expect.",
-              },
-              {
-                title: "Respect for the practice",
-                body: "Yoga is not a commodity. We work with professionals who take the discipline seriously — and we present their work to clients who genuinely value it.",
-              },
-              {
-                title: "Long-term relationships",
-                body: "We aim to build lasting connections between professionals and clients, not one-off transactions. Consistency matters to us on both sides.",
-              },
-              {
-                title: "India's yoga heritage",
-                body: "India has a depth of yoga knowledge that is unmatched. We are proud to help share it professionally and responsibly with the world.",
+                body: "We manage coordination and communication so that both clients and professionals have a smooth, reliable experience at every stage.",
               },
             ].map((v) => (
               <div
                 key={v.title}
-                className="rounded-2xl p-6 md:p-7"
+                className="rounded-2xl p-6"
                 style={{ background: "#fff", border: "1px solid #e4e4e7" }}
               >
-                <h3 className="text-base font-semibold mb-2">{v.title}</h3>
-                <p className="text-sm leading-7" style={{ color: "#71717a" }}>
+                <h3 className="text-base font-semibold mb-2.5">{v.title}</h3>
+                <p className="text-sm" style={{ color: "#71717a", lineHeight: "1.75" }}>
                   {v.body}
                 </p>
               </div>

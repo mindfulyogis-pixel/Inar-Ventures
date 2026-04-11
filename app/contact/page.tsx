@@ -16,17 +16,18 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
             className="text-xs font-medium mb-3 uppercase tracking-widest"
             style={{ color: "#71717a" }}
           >
-            Get in touch
+            Contact
           </p>
           <h1
             className="text-3xl md:text-5xl font-semibold leading-tight mb-4"
             style={{ letterSpacing: "-0.01em" }}
           >
-            We'd love to hear from you
+            Get in touch
           </h1>
-          <p className="text-base md:text-lg leading-8" style={{ color: "#52525b", maxWidth: "50ch" }}>
-            Whether you're looking to partner with us for your organisation, or
-            simply want to learn more about what we do — reach out.
+          <p className="text-base md:text-lg" style={{ color: "#52525b", maxWidth: "52ch", lineHeight: "1.8" }}>
+            Whether you are looking to bring yoga professionals into your
+            programme, or you are a yoga instructor or therapist interested in
+            joining our network — we would love to hear from you.
           </p>
         </div>
       </section>
@@ -48,28 +49,13 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                   style={{ background: "#edf3ee" }}
                 >
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path
-                      d="M2 4.5C2 3.7 2.7 3 3.5 3h11c.8 0 1.5.7 1.5 1.5v9c0 .8-.7 1.5-1.5 1.5h-11C2.7 15 2 14.3 2 13.5v-9Z"
-                      stroke="#3f6145"
-                      strokeWidth="1.3"
-                      fill="none"
-                    />
-                    <path
-                      d="M2 5l7 5 7-5"
-                      stroke="#3f6145"
-                      strokeWidth="1.3"
-                      strokeLinecap="round"
-                      fill="none"
-                    />
+                    <path d="M2 4.5C2 3.7 2.7 3 3.5 3h11c.8 0 1.5.7 1.5 1.5v9c0 .8-.7 1.5-1.5 1.5h-11C2.7 15 2 14.3 2 13.5v-9Z" stroke="#3f6145" strokeWidth="1.3" fill="none"/>
+                    <path d="M2 5l7 5 7-5" stroke="#3f6145" strokeWidth="1.3" strokeLinecap="round" fill="none"/>
                   </svg>
                 </div>
                 <div>
                   <p className="text-sm font-medium mb-0.5" style={{ color: "#18181b" }}>Email</p>
-                  <a
-                    href="mailto:hello@inarventures.com"
-                    className="text-sm"
-                    style={{ color: "#3f6145" }}
-                  >
+                  <a href="mailto:hello@inarventures.com" className="text-sm" style={{ color: "#3f6145" }}>
                     hello@inarventures.com
                   </a>
                 </div>
@@ -81,48 +67,41 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
                   style={{ background: "#edf3ee" }}
                 >
                   <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path
-                      d="M9 1.5C6.5 1.5 4.5 3.5 4.5 6c0 4 4.5 10.5 4.5 10.5S13.5 10 13.5 6c0-2.5-2-4.5-4.5-4.5Z"
-                      stroke="#3f6145"
-                      strokeWidth="1.3"
-                      fill="none"
-                    />
-                    <circle cx="9" cy="6" r="1.5" stroke="#3f6145" strokeWidth="1.3" fill="none" />
+                    <path d="M9 1.5C6.5 1.5 4.5 3.5 4.5 6c0 4 4.5 10.5 4.5 10.5S13.5 10 13.5 6c0-2.5-2-4.5-4.5-4.5Z" stroke="#3f6145" strokeWidth="1.3" fill="none"/>
+                    <circle cx="9" cy="6" r="1.5" stroke="#3f6145" strokeWidth="1.3" fill="none"/>
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium mb-0.5" style={{ color: "#18181b" }}>Location</p>
+                  <p className="text-sm font-medium mb-0.5" style={{ color: "#18181b" }}>Based in</p>
                   <p className="text-sm" style={{ color: "#71717a" }}>Bangalore, India</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 mt-0.5"
-                  style={{ background: "#edf3ee" }}
-                >
-                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path
-                      d="M3.5 3h3l1.5 3.5-1.75 1.25c.85 1.7 2 2.85 3.5 3.5L11 9.5 14.5 11v3c0 .55-.45 1-1 1C6.5 15 3 8.5 3 4.5c0-.55.45-1 1-1h-.5Z"
-                      stroke="#3f6145"
-                      strokeWidth="1.3"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-medium mb-0.5" style={{ color: "#18181b" }}>Phone</p>
-                  <p className="text-sm" style={{ color: "#71717a" }}>+91 — available on request</p>
                 </div>
               </div>
             </div>
 
-            <div
-              className="mt-10 pt-8"
-              style={{ borderTop: "1px solid #e4e4e7" }}
-            >
+            <div className="mt-9 pt-8" style={{ borderTop: "1px solid #e4e4e7" }}>
+              <p
+                className="text-xs font-medium mb-4 uppercase tracking-widest"
+                style={{ color: "#71717a" }}
+              >
+                What we can help with
+              </p>
+              <div className="space-y-3">
+                <div>
+                  <p className="text-sm font-medium mb-0.5" style={{ color: "#18181b" }}>For clients</p>
+                  <p className="text-sm" style={{ color: "#71717a", lineHeight: "1.7" }}>
+                    Partner enquiries and programme support
+                  </p>
+                </div>
+                <div>
+                  <p className="text-sm font-medium mb-0.5" style={{ color: "#18181b" }}>For professionals</p>
+                  <p className="text-sm" style={{ color: "#71717a", lineHeight: "1.7" }}>
+                    Network applications and general questions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-9 pt-8" style={{ borderTop: "1px solid #e4e4e7" }}>
               <p
                 className="text-xs font-medium mb-4 uppercase tracking-widest"
                 style={{ color: "#71717a" }}
@@ -132,35 +111,27 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               <div className="flex gap-3">
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition"
-                  style={{
-                    border: "1px solid #e4e4e7",
-                    color: "#3a3530",
-                    background: "#fff",
-                  }}
+                  className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"
+                  style={{ border: "1px solid #e4e4e7", color: "#3a3530", background: "#fff" }}
                   aria-label="LinkedIn"
                 >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="3" stroke="#3f6145" strokeWidth="1.2" fill="none"/>
-                    <path d="M4.5 6.5v5M4.5 4.5v.5" stroke="#3f6145" strokeWidth="1.2" strokeLinecap="round"/>
-                    <path d="M7.5 11.5V8.5c0-1 .5-2 2-2s2 1 2 2v3" stroke="#3f6145" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                    <rect x="0.75" y="0.75" width="13.5" height="13.5" rx="2.5" stroke="#3f6145" strokeWidth="1.2" fill="none"/>
+                    <path d="M4 6.5v5M4 4v.5" stroke="#3f6145" strokeWidth="1.2" strokeLinecap="round"/>
+                    <path d="M7 11.5V8.5c0-1 .5-2 2-2s2 1 2 2v3" stroke="#3f6145" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
                   </svg>
                   LinkedIn
                 </a>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium transition"
-                  style={{
-                    border: "1px solid #e4e4e7",
-                    color: "#3a3530",
-                    background: "#fff",
-                  }}
+                  className="inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"
+                  style={{ border: "1px solid #e4e4e7", color: "#3a3530", background: "#fff" }}
                   aria-label="Instagram"
                 >
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <rect x="1" y="1" width="14" height="14" rx="4" stroke="#3f6145" strokeWidth="1.2" fill="none"/>
-                    <circle cx="8" cy="8" r="3" stroke="#3f6145" strokeWidth="1.2" fill="none"/>
-                    <circle cx="11.5" cy="4.5" r="0.75" fill="#3f6145"/>
+                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none">
+                    <rect x="0.75" y="0.75" width="13.5" height="13.5" rx="3.5" stroke="#3f6145" strokeWidth="1.2" fill="none"/>
+                    <circle cx="7.5" cy="7.5" r="2.75" stroke="#3f6145" strokeWidth="1.2" fill="none"/>
+                    <circle cx="10.75" cy="4.25" r="0.7" fill="#3f6145"/>
                   </svg>
                   Instagram
                 </a>
@@ -191,76 +162,36 @@ export default async function ContactPage({ searchParams }: ContactPageProps) {
               method="POST"
               className="space-y-5"
             >
-              <input
-                type="hidden"
-                name="_next"
-                value="/contact?success=true"
-              />
-              <input
-                type="hidden"
-                name="_subject"
-                value="New message from Inar Ventures website"
-              />
+              <input type="hidden" name="_next" value="/contact?success=true" />
+              <input type="hidden" name="_subject" value="New message from Inar Ventures website" />
 
               <div className="grid sm:grid-cols-2 gap-5">
                 <div className="form-field">
                   <label className="form-label" htmlFor="firstName">First name</label>
-                  <input
-                    id="firstName"
-                    type="text"
-                    name="firstName"
-                    className="form-input"
-                    placeholder="Your first name"
-                    required
-                  />
+                  <input id="firstName" type="text" name="firstName" className="form-input" placeholder="Your first name" required />
                 </div>
                 <div className="form-field">
                   <label className="form-label" htmlFor="lastName">Last name</label>
-                  <input
-                    id="lastName"
-                    type="text"
-                    name="lastName"
-                    className="form-input"
-                    placeholder="Your last name"
-                    required
-                  />
+                  <input id="lastName" type="text" name="lastName" className="form-input" placeholder="Your last name" required />
                 </div>
               </div>
 
               <div className="form-field">
                 <label className="form-label" htmlFor="email">Email</label>
-                <input
-                  id="email"
-                  type="email"
-                  name="email"
-                  className="form-input"
-                  placeholder="your@email.com"
-                  required
-                />
+                <input id="email" type="email" name="email" className="form-input" placeholder="your@email.com" required />
               </div>
 
               <div className="form-field">
                 <label className="form-label" htmlFor="organisation">
-                  Organisation <span style={{ color: "#b0afac", fontWeight: 400 }}>(optional)</span>
+                  Organisation{" "}
+                  <span style={{ color: "#b0afac", fontWeight: 400 }}>(optional)</span>
                 </label>
-                <input
-                  id="organisation"
-                  type="text"
-                  name="organisation"
-                  className="form-input"
-                  placeholder="Your organisation or studio"
-                />
+                <input id="organisation" type="text" name="organisation" className="form-input" placeholder="Your organisation or studio" />
               </div>
 
               <div className="form-field">
                 <label className="form-label" htmlFor="subject">What is this about?</label>
-                <select
-                  id="subject"
-                  name="subject"
-                  className="form-input"
-                  defaultValue=""
-                  required
-                >
+                <select id="subject" name="subject" className="form-input" defaultValue="" required>
                   <option value="" disabled>Select a topic</option>
                   <option>Partnering with Inar Ventures (as a client)</option>
                   <option>Joining the network (as a yoga professional)</option>

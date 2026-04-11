@@ -5,30 +5,23 @@ export default function Home() {
     <main style={{ background: "#fafaf8", color: "#18181b" }}>
 
       {/* ── Hero ── */}
-      <section className="px-5 py-16 md:py-24">
+      <section className="px-5 py-14 md:py-22">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-14 items-center">
           <div>
-            <p
-              className="text-xs font-medium mb-4 tracking-widest uppercase"
-              style={{ color: "#71717a" }}
-            >
-              India's curated yoga network
-            </p>
-
             <h1
-              className="text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight mb-3"
+              className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-4"
               style={{ letterSpacing: "-0.02em" }}
             >
-              Qualified Indian yoga professionals, online
+              India's finest yoga instructors and therapists, available online
             </h1>
 
             <p
-              className="text-base md:text-lg leading-8 mb-5"
-              style={{ color: "#71717a", maxWidth: "46ch" }}
+              className="text-base leading-relaxed mb-6"
+              style={{ color: "#52525b", maxWidth: "48ch" }}
             >
-              We connect certified yoga instructors and therapists across India
-              with clients and organisations offering online classes and
-              programmes worldwide.
+              Inar Ventures is a curated network of qualified Indian yoga
+              professionals — available for online classes, therapy sessions, and
+              programme support for clients and organisations based outside India.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
@@ -43,7 +36,7 @@ export default function Home() {
                   ((e.currentTarget as HTMLAnchorElement).style.background = "#3f6145")
                 }
               >
-                Partner with Us
+                Find a Yoga Professional
               </a>
               <a
                 href="/yoga-professionals"
@@ -54,7 +47,7 @@ export default function Home() {
                   background: "#fff",
                 }}
               >
-                Apply as a Yoga Professional
+                Join Our Network
               </a>
             </div>
           </div>
@@ -65,10 +58,10 @@ export default function Home() {
               style={{ border: "1px solid #e4e4e7" }}
             >
               <img
-                src="https://images.unsplash.com/photo-1609780447631-05b93e5a88ea?auto=format&fit=crop&w=1200&q=80"
-                alt="Yoga instructor teaching an online class via video"
+                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=80"
+                alt="Yoga instructor in a calm, professional setting"
                 className="w-full object-cover"
-                style={{ height: "380px" }}
+                style={{ height: "400px" }}
               />
             </div>
             <div
@@ -101,55 +94,50 @@ export default function Home() {
             className="text-xs font-semibold uppercase tracking-widest"
             style={{ color: "#3f6145" }}
           >
-            For Clients — organisations &amp; studios based outside India
+            For Clients — Worldwide
           </span>
         </div>
       </div>
 
-      {/* ── Our curated network ── */}
+      {/* ── For Clients content ── */}
       <section style={{ background: "#fff", borderBottom: "1px solid #e4e4e7" }}>
-        <div className="max-w-6xl mx-auto px-5 pt-10 pb-14">
+        <div className="max-w-6xl mx-auto px-5 pt-8 pb-14">
+          <h2 className="text-2xl md:text-3xl font-semibold mb-5 leading-snug">
+            The right yoga professional for your programme
+          </h2>
           <p
-            className="text-base leading-8 mb-5"
-            style={{ color: "#52525b", maxWidth: "65ch" }}
+            className="text-base mb-6"
+            style={{ color: "#52525b", maxWidth: "65ch", lineHeight: "1.8" }}
           >
-            Inar Ventures maintains a carefully selected network of qualified
-            Indian yoga instructors and therapists — professionals reviewed for
-            their training, teaching experience, and ability to deliver
-            effectively in an online setting. We do the curation work so you
-            don't have to.
+            Finding a qualified, reliable yoga instructor or therapist for your
+            online platform can be time-consuming. Inar Ventures does the work
+            for you — we maintain a carefully vetted network of Indian yoga
+            instructors and therapists who are trained, experienced, and proven
+            in online delivery.
           </p>
-          <ul
-            className="space-y-2 text-sm"
-            style={{ color: "#52525b" }}
-          >
-            <li style={{ display: "flex", gap: "0.6rem" }}>
-              <span style={{ color: "#3f6145", fontWeight: 600 }}>—</span>
-              Verified qualifications and genuine teaching background
-            </li>
-            <li style={{ display: "flex", gap: "0.6rem" }}>
-              <span style={{ color: "#3f6145", fontWeight: 600 }}>—</span>
-              Curated for reliability and professionalism, not just availability
-            </li>
-            <li style={{ display: "flex", gap: "0.6rem" }}>
-              <span style={{ color: "#3f6145", fontWeight: 600 }}>—</span>
-              Experienced in online delivery and working with international clients
-            </li>
-            <li style={{ display: "flex", gap: "0.6rem" }}>
-              <span style={{ color: "#3f6145", fontWeight: 600 }}>—</span>
-              Matched to your programme's specific requirements
-            </li>
+          <ul className="space-y-2.5 text-sm" style={{ color: "#52525b" }}>
+            {[
+              "All professionals are verified for qualifications and teaching experience",
+              "Screened specifically for online delivery capability and communication",
+              "Matched to your programme's format — classes, therapy, or structured courses",
+              "Flexible consultancy arrangements to suit your organisation",
+            ].map((item) => (
+              <li key={item} style={{ display: "flex", gap: "0.65rem", lineHeight: "1.7" }}>
+                <span style={{ color: "#3f6145", fontWeight: 600, flexShrink: 0 }}>—</span>
+                {item}
+              </li>
+            ))}
           </ul>
         </div>
       </section>
 
       {/* ── Online Assignments ── */}
-      <section className="px-5 py-16 md:py-20" style={{ background: "#fafaf8" }}>
+      <section className="px-5 py-14 md:py-20" style={{ background: "#fafaf8" }}>
         <div className="max-w-6xl mx-auto">
-          <div className="mb-10">
+          <div className="mb-9">
             <p
-              className="text-xs font-medium mb-2"
-              style={{ color: "#71717a", letterSpacing: "0.08em", textTransform: "uppercase" }}
+              className="text-xs font-medium mb-2 uppercase tracking-widest"
+              style={{ color: "#71717a" }}
             >
               Types of work
             </p>
@@ -175,11 +163,11 @@ export default function Home() {
             ].map((card) => (
               <div
                 key={card.title}
-                className="rounded-2xl p-6 md:p-8"
+                className="rounded-2xl p-6 md:p-7"
                 style={{ background: "#fff", border: "1px solid #e4e4e7" }}
               >
-                <h3 className="text-base md:text-lg font-semibold mb-2">{card.title}</h3>
-                <p className="text-sm leading-7" style={{ color: "#71717a" }}>
+                <h3 className="text-base font-semibold mb-2.5">{card.title}</h3>
+                <p className="text-sm" style={{ color: "#71717a", lineHeight: "1.75" }}>
                   {card.body}
                 </p>
               </div>
@@ -189,7 +177,7 @@ export default function Home() {
       </section>
 
       {/* ── Why Inar Ventures ── */}
-      <section className="px-5 py-16 md:py-20" style={{ background: "#f0e9de" }}>
+      <section className="px-5 py-14 md:py-20" style={{ background: "#f0e9de" }}>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 md:gap-14 items-center">
           <div
             className="rounded-2xl md:rounded-3xl overflow-hidden order-2 md:order-1"
@@ -205,31 +193,29 @@ export default function Home() {
 
           <div className="order-1 md:order-2">
             <p
-              className="text-xs font-medium mb-2"
-              style={{ color: "#71717a", letterSpacing: "0.08em", textTransform: "uppercase" }}
+              className="text-xs font-medium mb-3 uppercase tracking-widest"
+              style={{ color: "#71717a" }}
             >
               Why Inar Ventures
             </p>
-            <h2 className="text-2xl md:text-3xl font-semibold mb-4 leading-snug">
-              Reliable yoga professionals for your online programmes
+            <h2 className="text-2xl md:text-3xl font-semibold mb-5 leading-snug">
+              A network built on quality, not just availability
             </h2>
-            <p className="text-sm md:text-base leading-8 mb-3" style={{ color: "#52525b" }}>
-              Whether you run a wellness platform, a corporate wellbeing
-              programme, or an online yoga studio, Inar Ventures gives you
-              access to qualified Indian yoga instructors and therapists who are
-              experienced, professional, and effective online.
+            <p className="text-sm md:text-base mb-4" style={{ color: "#52525b", lineHeight: "1.8" }}>
+              Anyone can build a directory. Inar Ventures is different — we work
+              only with yoga instructors and therapists who meet a clear standard
+              of training, experience, and online professionalism.
             </p>
-            <p className="text-sm md:text-base leading-8 mb-7" style={{ color: "#52525b" }}>
-              We do the curation so you don't have to — every professional in
-              our network is reviewed for qualifications, communication, and
-              online delivery ability.
+            <p className="text-sm md:text-base mb-7" style={{ color: "#52525b", lineHeight: "1.8" }}>
+              For clients, that means confidence. For professionals, it means
+              being part of a network that takes quality seriously.
             </p>
             <a
               href="/contact"
               className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium"
               style={{ background: "#3f6145", color: "#fff" }}
             >
-              Partner with Us
+              Find a Yoga Professional
               <span>→</span>
             </a>
           </div>
@@ -243,56 +229,59 @@ export default function Home() {
             className="text-xs font-semibold uppercase tracking-widest"
             style={{ color: "#3f6145" }}
           >
-            For Yoga Professionals — based in India
+            For Yoga Professionals — Based in India
           </span>
         </div>
       </div>
 
       {/* ── For Yoga Professionals ── */}
-      <section className="px-5 py-16 md:py-20" style={{ background: "#e8f0e9", color: "#1e2d1f" }}>
+      <section className="px-5 py-14 md:py-20" style={{ background: "#e8f0e9", color: "#1e2d1f" }}>
         <div className="max-w-6xl mx-auto">
-          <div className="max-w-2xl mb-8">
-            <h2 className="text-2xl md:text-3xl font-semibold mb-3 leading-snug">
-              Built for serious yoga teachers and therapists
+          <div className="max-w-2xl mb-9">
+            <h2 className="text-2xl md:text-3xl font-semibold mb-4 leading-snug">
+              Expand your practice. Work with clients worldwide.
             </h2>
-            <p className="text-sm md:text-base leading-8" style={{ color: "#3a5040" }}>
-              If you bring real qualifications, genuine experience, and the
-              ability to teach well online, Inar Ventures can connect you with
-              meaningful work — with clients based outside India.
+            <p className="text-sm md:text-base" style={{ color: "#3a5040", lineHeight: "1.8" }}>
+              If you are a qualified yoga instructor or yoga therapist based in
+              India, Inar Ventures can connect you with online work
+              opportunities — with wellness platforms, studios, and organisations
+              based outside India. You remain fully independent: this is a
+              consultancy arrangement, and you are free to continue working with
+              your existing clients.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
             {[
               {
-                title: "International exposure",
-                body: "Work with clients and organisations based in Europe, North America, and beyond.",
+                title: "International reach",
+                body: "Connect with clients in Europe, North America, and beyond without leaving India.",
               },
               {
-                title: "Matched to your profile",
-                body: "Opportunities suited to your speciality, availability, and experience level.",
+                title: "Work on your terms",
+                body: "Consultancy-based arrangements — no exclusivity, no restrictions on your other work.",
               },
               {
-                title: "Flexible assignments",
-                body: "Online classes, programme support, and therapy-related work — on your schedule.",
+                title: "Matched opportunities",
+                body: "We match you based on your speciality, experience, and availability.",
               },
               {
-                title: "Handled professionally",
-                body: "We manage coordination so you can focus entirely on your teaching.",
+                title: "Professional support",
+                body: "We handle the client coordination so you can focus on teaching.",
               },
             ].map((card) => (
               <div
                 key={card.title}
                 className="rounded-2xl p-5 md:p-6"
                 style={{
-                  background: "rgba(255,255,255,0.55)",
+                  background: "rgba(255,255,255,0.6)",
                   border: "1px solid rgba(63,97,69,0.15)",
                 }}
               >
                 <h3 className="text-sm md:text-base font-semibold mb-2" style={{ color: "#1e2d1f" }}>
                   {card.title}
                 </h3>
-                <p className="text-sm leading-6 md:leading-7" style={{ color: "#3a5040" }}>
+                <p className="text-sm" style={{ color: "#3a5040", lineHeight: "1.7" }}>
                   {card.body}
                 </p>
               </div>
@@ -304,7 +293,7 @@ export default function Home() {
             className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium"
             style={{ background: "#3f6145", color: "#fff" }}
           >
-            Apply to Join the Network
+            Join Our Network
             <span>→</span>
           </a>
         </div>
