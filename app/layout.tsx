@@ -18,6 +18,7 @@ export default function RootLayout({
           <header className="site-header">
             <div className="container nav-wrap">
               <a href="/" className="brand">
+                <span className="logo-mark" aria-hidden="true" />
                 Inar Ventures
               </a>
 
@@ -36,15 +37,16 @@ export default function RootLayout({
           <main>{children}</main>
 
           <footer className="site-footer">
-            <div className="container footer-grid">
-              <div className="footer-col footer-intro">
+            <div className="container footer-top">
+              <div className="footer-brand-block">
                 <div className="footer-brand">Inar Ventures</div>
-                <p className="footer-text" style={{ maxWidth: "30ch" }}>
-                  Connecting qualified Indian yoga professionals with clients
-                  and organisations worldwide.
+                <p className="footer-tagline">
+                  Curated Indian yoga professionals<br />for online work worldwide.
                 </p>
               </div>
+            </div>
 
+            <div className="container footer-grid">
               <div className="footer-col">
                 <div className="footer-heading">Contact</div>
                 <p className="footer-text">Bangalore, India</p>
